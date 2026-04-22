@@ -6,20 +6,20 @@ class Conductor < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-darwin-arm64.tar.gz"
-      sha256 "12805be3042000f966c6abb787f923e6cb77d234ed5852a58a126348343f1667"
+      sha256 "c28c6767486ec3ad140d3b758c3b55a428a449b63264ec0c8c01b9536c868dc4"
     else
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-darwin-x64.tar.gz"
-      sha256 "6b7d5cf1b097761f05b88b8a636376f1c193a58d22b49521cb1cff7a5cdc4ff2"
+      sha256 "6c6771829f0d04263d096b2c5d43ea564d3f5ee35b9972f6f27d606a9c446524"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-linux-arm64.tar.gz"
-      sha256 "7679084caf872a64bebe7c30ad6e54badebe21d6840d19ac059cfa872ba2e3dd"
+      sha256 "b2060f8fa41924a13307c590fe0db789de70733f2a59bf3209e6c67e1fdf8399"
     else
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-linux-x64.tar.gz"
-      sha256 "5a70f5542614556635daf67fa19fde8468ab9175a650a4343b3488058d31bea9"
+      sha256 "1f4c8828692585b722db0482aa53472b5ca42ea81a57cc9172626dc7c281aca3"
     end
   end
 
