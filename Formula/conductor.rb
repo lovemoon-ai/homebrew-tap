@@ -1,25 +1,25 @@
 class Conductor < Formula
   desc "Run the Conductor CLI and daemon with bundled Node.js runtime"
   homepage "https://conductor.conductor-ai.top/"
-  version "0.15.1"
+  version "0.15.2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-darwin-arm64.tar.gz"
-      sha256 "130d90d65e4cc29179e4d8a2a4ea62eb7dc8d056f475c712b9398e9e1820de6b"
+      sha256 "0ab789ae31b6c30e25a3b9a8e8350db240d789ee69ae30fe0a87054349ad7b7e"
     else
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-darwin-x64.tar.gz"
-      sha256 "b469fdafc88049f868bf443fd9518feed75ddddb84a33b522ff0cb920979b7a0"
+      sha256 "6870f8634c34f82e94fded4c069fb082a7882c58bf31d23798a29c4e7f3b1976"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-linux-arm64.tar.gz"
-      sha256 "386c00c2e26449f757c298637d6de2c1985ffd715a2bc6449b3a20f9c59a1e51"
+      sha256 "23f6a635958f49810abb80f7bc09b2ff3da555245d87d7dee6b763c71bfdaeea"
     else
       url "https://github.com/lovemoon-ai/conductor/releases/download/v#{version}/conductor-v#{version}-linux-x64.tar.gz"
-      sha256 "b4407bd67fbf79d9cde5d050fcdc901c40bf084849f5f36bba885b397d9b9aa0"
+      sha256 "1fd23cc48db9eda43a0543943806d803a1b13d94f89afb3b38557e2697d6342b"
     end
   end
 
